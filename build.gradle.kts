@@ -1,23 +1,23 @@
 buildscript {
-    repositories {
-        google()
-        jcenter()
-    }
-    dependencies {
-        classpath(Config.BuildPlugins.gradleBuildTools)
-        classpath(Config.BuildPlugins.kotlinGradlePlugin)
-    }
+	repositories {
+		google()
+		jcenter()
+	}
+	dependencies {
+		classpath(Config.BuildPlugins.gradleBuildTools)
+		classpath(Config.BuildPlugins.kotlinGradlePlugin)
+	}
 }
 
 allprojects {
-    repositories {
-        google()
-        jcenter()
-    }
+	repositories {
+		google()
+		jcenter()
+	}
 }
 
 tasks {
-    val clean by registering(Delete::class) {
-        delete(buildDir)
-    }
+	val clean by registering(Delete::class) {
+		delete(buildDir)
+	}
 }
